@@ -1,0 +1,259 @@
+/* Font Families */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Tapestry&display=swap');
+
+/* Css Reset */
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Css Variables */
+:root{
+    --navbar-height :59 px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    font-family: 'Lobster', cursive;
+}
+
+#navbar::before{
+    content:"";
+    background-color: rgb(0, 0, 0);
+    position:absolute;
+    top: 0px;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.4;
+}
+
+/* Navigation bar: Logo and Image */
+#logo{
+    margin: 34px 45px
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+    border-radius: 50px;
+}
+
+/* Navigation bar : List Styling */
+
+
+#navbar ul{
+    display: flex;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display:block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    height: 642px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#home::before{
+    content:"";
+    background:url(/bg2.jpg) no-repeat center center/cover;
+    position:absolute;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Tapestry', cursive;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Tapestry', cursive;
+    
+}
+
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(180, 31, 178);
+    padding: 34px;
+    margin: 3px 25px;
+    border-radius: 28px;
+    background-color: rgb(236, 222, 250);
+    margin-bottom: 20px;
+}
+#services .box img{
+   height: 160px;
+   width: 250px;
+   display: block;
+   margin: auto;
+   border-radius: 20px;
+}
+#services .box p{
+    font-family: 'Tapestry', cursive;
+}
+
+
+/* Clients Section */
+#client-section{
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url(/clients1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity : 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px; ;
+}
+
+.clients img{
+    height: 124px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index:-1;
+    opacity: 0.7;
+    background: url(/contact_us.jpg) no-repeat center center/cover;
+    
+}
+
+#clients img{
+    height: 124px;
+    width: 124px;
+}
+
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px ;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Lobster', cursive;
+}
+
+#submit{
+    padding: 2px 18px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color:#ECDEFA;
+    color: rgb(0, 0, 0);
+    margin: 17px;
+    font-size: 2.5rem;
+    border-radius: 15px;
+    cursor:pointer;
+    font-family: 'Lobster', cursive;
+    
+}
+
+footer{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 9px 20px;
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    font-family: 'Tapestry', cursive;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    font-family: 'Tapestry', cursive;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 18px;
+    border: 2px solid white;
+    background-color:rgb(193, 81, 231);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor:pointer;
+    font-family: 'Lobster', cursive;
+}
+
+.center{
+    text-align: center;
+}
